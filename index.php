@@ -4,6 +4,7 @@ require 'inc/head.php';
 
 if (empty($_SESSION["login"] )) {
     header ("location: http://localhost:8000/login.php");
+    die;
 }
 
 

@@ -6,6 +6,11 @@ if (empty($_SESSION["login"] )) {
     header ("location: http://localhost:8000/login.php");
 }
 
+if (isset($_GET['logout']) && $_GET['logout'] == 1){
+    session_destroy();
+    header('Location: login.php');
+    die;
+}
 
 if (!empty($_GET['add_to_cart'])) {
   switch ($_GET['add_to_cart']) {

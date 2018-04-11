@@ -8,7 +8,7 @@ if (isset($_POST['loginname'])) {
     header ("Location: http://localhost:8000/index.php");
 }
 if (isset($_SESSION['loginname'])) {
-  hearder ('location: index.php');
+  header ('location: index.php');
 }
 
 ?>

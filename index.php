@@ -1,7 +1,7 @@
 <?php
 require 'inc/head.php';
 
-if (!isset($_SESSION['login'])) {
+if (!isset($_SESSION['loginname'])) {
     header('Location: login.php');
     die;
 }

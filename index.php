@@ -1,7 +1,6 @@
 <?php
 require 'inc/head.php';
 
-
 if (!isset($_SESSION['login'])) {
     header('Location: login.php');
     die;
@@ -11,7 +10,6 @@ if (isset($_GET['logout']) && $_GET['logout'] == 1){
     header('Location: login.php');
     die;
 }
-
 
 if (!empty($_GET['add_to_cart'])) {
   switch ($_GET['add_to_cart']) {

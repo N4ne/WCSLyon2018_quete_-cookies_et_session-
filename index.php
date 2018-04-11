@@ -5,7 +5,7 @@ if (!isset($_SESSION['login'])) {
     header('Location: login.php');
     die;
 }
-if (isset($_GET['logout']) && $_GET['logout'] == 1){
+if (isset($_GET['logOut']) && $_GET['logOut'] == 1){
     session_destroy();
     header('Location: login.php');
     die;

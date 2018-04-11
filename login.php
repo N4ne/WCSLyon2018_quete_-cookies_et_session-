@@ -4,7 +4,7 @@ require 'inc/head.php';
 
 
 if (isset($_POST['loginname'])) {
-    $_SESSION["login"] = $_POST['loginname'];
+    $_SESSION["loginname"] = $_POST['loginname'];
     header ("Location: http://localhost:8000/index.php");
 }
 if (isset($_SESSION['loginname'])) {
